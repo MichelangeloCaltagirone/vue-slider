@@ -66,14 +66,18 @@
 p {
     position: absolute;
     color: violet;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
 }
 
-#infoGame {
+#infoGame, #gameName {
+    right: 4px;
+}
+
+#carousel #gameName {
+    bottom: 25px
+}
+#carousel #infoGame {
     bottom: 5px;
-    right: 0;
-}
-
-#nameGame {
-    bottom: 30px;
-    right: 0;
 }
