@@ -19,9 +19,11 @@
     <div id="cstcontainer">
         <div id="carousel">
             
-            <i id="prev" class="bi bi-arrow-90deg-left"></i>
-            <div id="gallery"><img :src="images[0].src" alt="" class="active"></div>
-            <i id="next" class="bi bi-arrow-90deg-right"></i>
+            <i id="prev" class="bi bi-arrow-90deg-left" @click="decreaseIndex()"></i>
+            <div id="gallery"><img :src="images[currentActiveIndex].src" :alt='currentActiveIndex' class="active"></div>
+            <p id="gameName">{{images[currentActiveIndex].title}}</p>
+            <p id="infoGame">{{images[currentActiveIndex].text}}</p>
+            <i id="next" class="bi bi-arrow-90deg-right" @click="increaseIndex()"></i>
 
         </div>
         <div id="thumbnails"><img :src="images[0].src" class="active" alt=""></div>

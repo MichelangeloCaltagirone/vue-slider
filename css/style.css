@@ -62,3 +62,18 @@
 #next {
     right: -45px;
 }
+
+p {
+    position: absolute;
+    color: violet;
+}
+
+#infoGame {
+    bottom: 5px;
+    right: 0;
+}
+
+#nameGame {
+    bottom: 30px;
+    right: 0;
+}

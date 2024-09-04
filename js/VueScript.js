@@ -74,6 +74,25 @@ createApp({
                 }
             ],
             currentActiveIndex: 0
-        }}
+        }},
 
-}).mount('#gallery')
+    methods: {
+            increaseIndex(){
+                if(this.currentActiveIndex === this.images.length -1) {
+                    this.currentActiveIndex = 0
+                }else {
+                    this.currentActiveIndex++;
+                    console.log(this.currentActiveIndex)
+                }                
+            },
+            decreaseIndex(){
+                if (this.currentActiveIndex < 0) {
+                    this.currentActiveIndex = this.images.length - 1
+                } else {
+                    this.currentActiveIndex--;
+                    console.log(this.currentActiveIndex)
+                }                
+            }
+        }
+
+}).mount('#carousel')
