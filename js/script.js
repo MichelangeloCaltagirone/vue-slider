@@ -52,3 +52,6 @@ btnNext.addEventListener('click', function() {
     images[currentActiveIndex].classList.add('active');
     thumbs[currentActiveIndex].classList.add('active');
 })
+
+
+// TODO Rifare con Vue
